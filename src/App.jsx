@@ -3,6 +3,8 @@ import './App.css'
 import React from "react";
 
 //Não precisa ser o mesmo nome 'Primeiro', mas o que está aqui no import terá que ser o nome do elemento
+import IndiretaPai from './components/comunicacao/IndiretaPai'
+import DiretaPai from './components/comunicacao/DiretaPai'
 import UsuarioInfo from './components/condicional/UsuarioInfo'
 import ParOuImpar from './components/condicional/ParOuImpar' 
 import TabelaProdutos from './components/repeticao/TabelaProdutos'
@@ -15,6 +17,7 @@ import Fragmento from "./components/basicos/Fragmento";
 import ComParametro from "./components/basicos/ComParametro";
 import Primeiro from "./components/basicos/Primeiro";
 
+
 // '_' dizendo que o parâmetro não me interessa nessa função
 export default (_) => (
   //pode retirar o corpo da função {return()}
@@ -22,6 +25,12 @@ export default (_) => (
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
+    <Card titulo="#10 - Comunicação Indireta" color="#8BAD39">
+      <IndiretaPai></IndiretaPai>
+      </Card>
+    <Card titulo="#09 - Comunicação Direta" color="#59323C">
+      <DiretaPai></DiretaPai>
+      </Card>
     <Card titulo="#08 - Renderização Condicional" color="#982395">
         <ParOuImpar numero={21} />
         <UsuarioInfo usuario={{ nome: 'Fernando' }}/>
