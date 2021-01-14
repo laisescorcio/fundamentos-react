@@ -3,6 +3,7 @@ import './App.css'
 import React from "react";
 
 //Não precisa ser o mesmo nome 'Primeiro', mas o que está aqui no import terá que ser o nome do elemento
+import Contador from './components/contador/Contador'
 import Input from './components/formulario/Input'
 import IndiretaPai from './components/comunicacao/IndiretaPai'
 import DiretaPai from './components/comunicacao/DiretaPai'
@@ -26,14 +27,17 @@ export default (_) => (
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
+    <Card titulo="#12 - Contador" color="#424242">
+      <Contador numeroInicial={20}/>
+      </Card>
     <Card titulo="#11 - Componente Controlado (Input)" color="#E45F56">
-      <Input></Input>
+      <Input />
       </Card>
     <Card titulo="#10 - Comunicação Indireta" color="#8BAD39">
-      <IndiretaPai></IndiretaPai>
+      <IndiretaPai />
       </Card>
     <Card titulo="#09 - Comunicação Direta" color="#59323C">
-      <DiretaPai></DiretaPai>
+      <DiretaPai />
       </Card>
     <Card titulo="#08 - Renderização Condicional" color="#982395">
         <ParOuImpar numero={21} />
