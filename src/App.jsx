@@ -3,6 +3,7 @@ import './App.css'
 import React from "react";
 
 //Não precisa ser o mesmo nome 'Primeiro', mas o que está aqui no import terá que ser o nome do elemento
+import Mega from './components/Mega/Mega'
 import Contador from './components/contador/Contador'
 import Input from './components/formulario/Input'
 import IndiretaPai from './components/comunicacao/IndiretaPai'
@@ -27,6 +28,9 @@ export default (_) => (
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
+    <Card titulo="#13 - Mega Sena" color="#B9006E">
+      <Mega qtde={8}/>
+      </Card>
     <Card titulo="#12 - Contador" color="#424242">
       <Contador numeroInicial={20}/>
       </Card>
